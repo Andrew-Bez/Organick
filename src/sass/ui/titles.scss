@@ -1,0 +1,20 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.header__logo {
+	font-size: 38px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+.header__cart-link {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+.link {
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}

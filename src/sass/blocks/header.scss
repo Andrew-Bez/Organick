@@ -1,0 +1,66 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.header {
+	padding: 69px 0;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+	&__nav {
+		display: flex;
+		gap: 25px;
+		list-style-type: none;
+	}
+	&__shopping {
+		display: flex;
+		align-items: center;
+		gap: 18px;
+	}
+	&__search {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		border-radius: 36px;
+		height: 66px;
+		width: 376px;
+		background: $milk;
+		&-input {
+			background-color: transparent;
+			width: 300px;
+			height: 100%;
+			border: none;
+			&:focus {
+				outline: none;
+			}
+		}
+		&-btn {
+			width: 56px;
+			height: 56px;
+			border-radius: 50%;
+			border: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: $green;
+		}
+	}
+	&__cart {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+    height: 66px;
+    padding: 5px 15px 5px 0px;
+		border-radius: 33px;
+		border: 1px solid #e0e0e0;
+		&-btn {
+			background-color: transparent;
+			border: none;
+		}
+	}
+}

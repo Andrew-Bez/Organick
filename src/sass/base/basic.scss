@@ -40,9 +40,13 @@ html {
 	font-family: 'Roboto', sans-serif;
 	scroll-behavior: smooth;
 	background-color: $white;
+	color: $dark-gray;
+	a {
+		color: $dark-gray;
+		text-decoration: none;
+	}
 }
 
 .container {
-	width: 1596px;
-	margin: 0 auto;
+	margin: 0 162px;
 }
