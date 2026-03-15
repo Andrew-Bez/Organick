@@ -1,0 +1,35 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.about {
+	background: $white url('/src/img/citrus_bckg.png') left center / 1000px
+		no-repeat;
+	padding-top: 186px;
+	padding-bottom: 199px;
+	&__wrapper {
+		width: 702px;
+		margin-left: 796px;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    align-items: start;
+	}
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  &__benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__item {
+    display: flex;
+    gap: 19px;
+    &-img {
+      background-color: white;
+      padding: 26px;
+      border-radius: 25px;
+    }
+  }
+}

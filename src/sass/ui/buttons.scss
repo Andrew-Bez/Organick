@@ -1,0 +1,14 @@
+@use '/src/sass/base/variables.scss' as *;
+@use '/src/sass/base/mixins.scss' as *;
+
+.button {
+	@include button;
+	color: $white;
+background: #274C5B;
+}
+
+.button-yellow {
+	@include button;
+	color: $blue;
+background: #EFD372;
+}

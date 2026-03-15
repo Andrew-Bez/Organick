@@ -1,0 +1,21 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.cards {
+	padding-top: 145px;
+	padding-bottom: 190px;
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 36px;
+	}
+	&__item {
+		width: 682px;
+		height: 367px;
+    padding: 110px 0 0 55px;
+		border-radius: 25px;
+	}
+	&__title-h2 {
+		width: 285px;
+	}
+}

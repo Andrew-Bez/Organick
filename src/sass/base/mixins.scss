@@ -1,4 +1,16 @@
 @use '/src/sass/base/variables.scss' as *;
 
+@mixin button {
+	display: flex;
+	padding: 28px 39px 29px 39px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border: none;
+	border-radius: 16px;
 
-
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+}

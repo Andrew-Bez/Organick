@@ -18,3 +18,55 @@
 	font-weight: 700;
 	line-height: normal;
 }
+
+.subtitle {
+	font-family: Yellowtail;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.promo__title-h1 {
+	font-size: 70px;
+}
+
+.promo__subtitle {
+	color: $green;
+}
+
+.about__title-h2 {
+	font-size: 50px;
+}
+
+.about__subtitle {
+	color: $green;
+}
+
+.about__item-title {
+	font-size: 25px;
+}
+
+.about__item-p {
+	width: 444px;
+}
+
+.cards__title-h2 {
+	font-size: 40px;
+}
+
+.title {
+	color: $blue;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+}
+
+.text {
+	color: $dark-gray;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 165.4%;
+}
