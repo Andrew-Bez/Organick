@@ -14,3 +14,9 @@
 	font-style: normal;
 	font-weight: 700;
 }
+
+@mixin font($size, $weight) {
+	font-size: $size;
+	font-weight: $weight;
+	line-height: normal;
+}

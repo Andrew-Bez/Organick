@@ -16,7 +16,7 @@ class cardsItem {
 
 		element.innerHTML = `
 						<div class="cards__subtitle subtitle">${this.sub}</div>
-						<h2 class="cards__title-h2 title">${this.title}</h2>`
+						<h2 class="cards__title title title-h3">${this.title}</h2>`
 
 		element.style.backgroundImage = `url(${this.src})`
 		element.style.backgroundPosition = 'center'
@@ -25,7 +25,7 @@ class cardsItem {
 
 		this.parent.append(element)
 
-		const titleColor = element.querySelector('.cards__title-h2'),
+		const titleColor = element.querySelector('.cards__title'),
 			subColor = element.querySelector('.cards__subtitle')
 
 		titleColor.style.color = `${this.color}`

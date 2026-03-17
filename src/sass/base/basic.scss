@@ -18,6 +18,10 @@ ul[role='list'] {
 	padding-inline: 0;
 }
 
+ol, ul {
+	list-style-type: none;
+}
+
 summary {
 	list-style: none;
 }
