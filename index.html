@@ -7,19 +7,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
@@ -30,14 +18,14 @@
 					<a href="/" class="header__logo logo"
 						><img src="/src/img/logo/Logo.svg" alt="" />Organick</a
 					>
-					<ul class="header__nav">
-						<li class="header__item"><a class="link" href="#">Home</a></li>
-						<li class="header__item"><a class="link" href="#">About</a></li>
-						<li class="header__item"><a class="link" href="#">Pages</a></li>
-						<li class="header__item"><a class="link" href="#">Shop</a></li>
-						<li class="header__item"><a class="link" href="#">Projects</a></li>
-						<li class="header__item"><a class="link" href="#">News</a></li>
-					</ul>
+					<nav class="header__nav">
+						<a class="header__item link" href="#">Home</a>
+						<a class="header__item link" href="#">About</a>
+						<a class="header__item link" href="#">Pages</a>
+						<a class="header__item link" href="#">Shop</a>
+						<a class="header__item link" href="#">Projects</a>
+						<a class="header__item link" href="#">News</a>
+					</nav>
 					<div class="header__shopping">
 						<div class="header__search">
 							<input type="text" class="header__search-input" />
@@ -143,7 +131,7 @@
 							<div class="products__title title title-md">
 								Calabrese Broccoli
 							</div>
-							<div class="products__underline"></div>
+							<div class="divider"></div>
 							<div class="products__block">
 								<div class="products__price">
 									<div class="products__price-old">$20.00</div>
@@ -157,7 +145,65 @@
 							</div>
 						</li> -->
 					</ul>
-					<div class="categories__btn button">Load More</div>
+					<button class="categories__btn button">Load More</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="review">
+			<div class="container">
+				<div class="review__wrapper">
+					<div class="review__subtitle subtitle text-green">Testimonial</div>
+					<h2 class="review__title title title-h2">
+						What Our Customer Saying?
+					</h2>
+					<div class="review__slider swiper">
+						<div class="swiper__slide">
+							<img
+								src="/src/img/review_photo.png"
+								alt="women"
+								class="review__slider-img"
+							/>
+							<img src="/src/img/products/star.png" alt="five star" />
+							<div class="review__text text-md">
+								Simply dummy text of the printing and typesetting industry.
+								Lorem Ipsum simply dummy text of the printing and typesetting
+								industry. Lorem Ipsum has been.
+							</div>
+							<h4 class="review__author title title-lg">Sara Taylor</h4>
+							<div class="review__author-info">Consumer</div>
+						</div>
+					</div>
+					<div class="swiper__pagination"></div>
+					<div class="divider"></div>
+					<ul class="review__benefits">
+						<li class="review__item">
+							<div class="review__item-wrap">
+								<h2 class="review__number title title-h2">100%</h2>
+								<div class="review__number-sub number-sub">Organic</div>
+							</div>
+						</li>
+						<li class="review__item">
+							<div class="review__item-wrap">
+								<h2 class="review__number title title-h2">285</h2>
+								<div class="review__number-sub number-sub">Active Product</div>
+							</div>
+						</li>
+						<li class="review__item">
+							<div class="review__item-wrap">
+								<h2 class="review__number title title-h2">350+</h2>
+								<div class="review__number-sub number-sub">Organic Orchads</div>
+							</div>
+						</li>
+						<li class="review__item">
+							<div class="review__item-wrap">
+								<h2 class="review__number title title-h2">25+</h2>
+								<div class="review__number-sub number-sub">
+									Years of Farming
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
