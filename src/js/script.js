@@ -218,3 +218,45 @@ window.addEventListener('DOMContentLoaded', () => {
 		product.render()
 	})
 })
+
+class GalleryItem {
+	constructor({ parent, src, linkTitle }) {
+		this.parent = document.querySelector(parent)
+		this.src = src
+		this.linkTitle = linkTitle
+	}
+
+	render() {
+		const element = document.createElement('li')
+		element.classList.add('gallery__item')
+		
+		element.style.backgroundImage = `url(${this.src})`
+
+		element.innerHTML = `<a href="#" class="gallery__link">${this.linkTitle}</a>`
+
+		this.parent.append(element)
+	}
+}
+
+const galleryItems = [
+	{
+		parent: '.gallery__list',
+		src: '/src/img/organic__juice.png',
+		linkTitle: 'Organic Juice',
+	},
+	{
+		parent: '.gallery__list',
+		src: '/src/img/organick__food.jpg',
+		linkTitle: 'Organic Food',
+	},
+	{
+		parent: '.gallery__list',
+		src: '/src/img/nuts__cookies.png',
+		linkTitle: 'Nuts Cookis',
+	},
+]
+
+galleryItems.forEach(item => {
+	const galleryItem = new GalleryItem(item)
+	galleryItem.render()
+})

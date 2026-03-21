@@ -18,4 +18,11 @@
     flex-direction: column;
     gap: 8px;
   }
+  &__btn {
+    display: flex;
+    flex-direction: row;
+    img {
+      margin-top: 2px;
+    }
+  }
 }
