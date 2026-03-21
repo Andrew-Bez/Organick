@@ -1,0 +1,21 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.offer {
+  padding: 200px 90px;
+  background-color: $blue;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

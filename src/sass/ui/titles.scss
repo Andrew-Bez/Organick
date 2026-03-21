@@ -14,7 +14,7 @@
 .products__price-new, .number-sub {
 	font-family: 'Open Sans';
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 600;
 }
 /// TypoSizes
 .title-h1 {
@@ -37,8 +37,12 @@
 	@include font(20px, 600);
 }
 /// base styles
-.title {
+.title-blue {
 	color: $blue;
+}
+
+.title-white {
+	color: white;
 }
 
 .subtitle {

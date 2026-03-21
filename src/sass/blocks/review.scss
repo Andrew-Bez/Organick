@@ -11,7 +11,24 @@
 		flex-direction: column;
 		align-items: center;
 	}
+	&__slide {
+		display: block;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		margin-top: 60px;
+		width: 780px;
+		&-img {
+			border-radius: 100%;
+		}
+	}
+	&__divider {
+		margin-top: 102px;
+		width: 1108px;
+	}
 	&__benefits {
+		margin-top: 102px;
 		display: flex;
 		gap: 62px;
 	}
@@ -29,7 +46,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			background: $gray;
+			background: #f1f1f1;
 			width: 189px;
 			height: 189px;
 			border-radius: inherit;

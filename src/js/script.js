@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 			element.innerHTML = `
 						<div class="cards__subtitle subtitle">${this.sub}</div>
-						<h2 class="cards__title title title-h3">${this.title}</h2>`
+						<h2 class="cards__title title-blue title-h3">${this.title}</h2>`
 
 			element.style.backgroundImage = `url(${this.src})`
 			element.style.backgroundPosition = 'center'
@@ -55,7 +55,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	cardTwo.render()
 
 	class productsItem {
-		constructor(parent, tag, src, alt, title, priceOld, priceNew) {
+		constructor({ parent, tag, src, alt, title, priceOld, priceNew }) {
 			this.parent = document.querySelector(parent)
 			this.tag = tag
 			this.src = src
@@ -74,7 +74,7 @@ window.addEventListener('DOMContentLoaded', () => {
 								alt=${this.alt}
 								class="products__img"
 							/>
-							<div class="products__title title title-md">
+							<div class="products__title title-blue title-md">
 								${this.title}
 							</div>
 							<div class="products__divider"></div>
@@ -94,91 +94,127 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
-	let shopItemOne = new productsItem(
-		'.products',
-		'Vegetable',
-		'"/src/img/products/broccoli.png"',
-		'"broccoli"',
-		'Calabrese Broccoli',
-		'$20.00',
-		'$13.00',
-	)
-	shopItemOne.render()
+	const shopItems = [
+		{
+			parent: '.categories__list',
+			tag: 'Vegetable',
+			src: '/src/img/products/broccoli.png',
+			alt: 'broccoli',
+			title: 'Calabrese Broccoli',
+			priceOld: '$20.00',
+			priceNew: '$13.00',
+		},
+		{
+			parent: '.categories__list',
+			tag: 'Fresh',
+			src: '"/src/img/products/banana.png"',
+			alt: '"banana"',
+			title: 'Fresh Banana Fruites',
+			priceOld: '$20.00',
+			priceNew: '$14.00',
+		},
+		{
+			parent: '.categories__list',
+			tag: 'Millets',
+			src: '"/src/img/products/pistaches.png"',
+			alt: '"pistaches"',
+			title: 'White Nuts',
+			priceOld: '$20.00',
+			priceNew: '$15.00',
+		},
+		{
+			parent: '.categories__list',
+			tag: 'Vegetable',
+			src: '"/src/img/products/tomato.png"',
+			alt: '"tomato"',
+			title: 'Vegan Red Tomato',
+			priceOld: '$20.00',
+			priceNew: '$17.00',
+		},
+		{
+			parent: '.categories__list',
+			tag: 'Health',
+			src: '"/src/img/products/bean.png"',
+			alt: '"bean"',
+			title: 'Mung Bean',
+			priceOld: '$20.00',
+			priceNew: '$11.00',
+		},
+		{
+			parent: '.categories__list',
+			tag: 'Nuts',
+			src: '"/src/img/products/hazelnut.png"',
+			alt: '"hazelnut"',
+			title: 'Brown Hazelnut',
+			priceOld: '$20.00',
+			priceNew: '$12.00',
+		},
+		{
+			parent: '.categories__list',
+			tag: 'Fresh',
+			src: '"/src/img/products/eggs.png"',
+			alt: '"eggs"',
+			title: 'Eggs',
+			priceOld: '$20.00',
+			priceNew: '$17.00',
+		},
+		{
+			parent: '.categories__list',
+			tag: 'Fresh',
+			src: '"/src/img/products/bread.png"',
+			alt: '"bread"',
+			title: 'Zelco Suji Elaichi Rusk',
+			priceOld: '$20.00',
+			priceNew: '$15.00',
+		},
+	]
 
-	let shopItemTwo = new productsItem(
-		'.products',
-		'Fresh',
-		'"/src/img/products/banana.png"',
-		'"banana"',
-		'Fresh Banana Fruites',
-		'$20.00',
-		'$14.00',
-	)
-	shopItemTwo.render()
+	shopItems.forEach(item => {
+		const product = new productsItem(item)
+		product.render()
+	})
 
-	let shopItemThree = new productsItem(
-		'.products',
-		'Millets',
-		'"/src/img/products/pistaches.png"',
-		'"pistaches"',
-		'White Nuts',
-		'$20.00',
-		'$15.00',
-	)
-	shopItemThree.render()
+	const offerItems = [
+		{
+			parent: '.offer__products',
+			tag: 'Vegetable',
+			src: '/src/img/products/mung-bean.png',
+			alt: 'mung bean',
+			title: 'Mung Bean',
+			priceOld: '$20.00',
+			priceNew: '$11.00',
+		},
+		{
+			parent: '.offer__products',
+			tag: 'Vegetable',
+			src: '/src/img/products/brown-hazelnut.png',
+			alt: 'Brown Hazelnut',
+			title: 'Brown Hazelnut',
+			priceOld: '$20.00',
+			priceNew: '$12.00',
+		},
+		{
+			parent: '.offer__products',
+			tag: 'Vegetable',
+			src: '/src/img/products/onion.png',
+			alt: 'Onion',
+			title: 'Onion',
+			priceOld: '$20.00',
+			priceNew: '$17.00',
+		},
+		{
+			parent: '.offer__products',
+			tag: 'Vegetable',
+			src: '/src/img/products/cabbage.png',
+			alt: 'Cabbage',
+			title: 'Cabbage',
+			priceOld: '$20.00',
+			priceNew: '$17.00',
+		},
+	]
 
-	let shopItemFour = new productsItem(
-		'.products',
-		'Vegetable',
-		'"/src/img/products/tomato.png"',
-		'"tomato"',
-		'Vegan Red Tomato',
-		'$20.00',
-		'$17.00',
-	)
-	shopItemFour.render()
-
-	let shopItemFive = new productsItem(
-		'.products',
-		'Health',
-		'"/src/img/products/bean.png"',
-		'"bean"',
-		'Mung Bean',
-		'$20.00',
-		'$11.00',
-	)
-	shopItemFive.render()
-
-	let shopItemSix = new productsItem(
-		'.products',
-		'Nuts',
-		'"/src/img/products/hazelnut.png"',
-		'"hazelnut"',
-		'Brown Hazelnut',
-		'$20.00',
-		'$12.00',
-	)
-	shopItemSix.render()
-
-	let shopItemSeven = new productsItem(
-		'.products',
-		'Fresh',
-		'"/src/img/products/eggs.png"',
-		'"eggs"',
-		'Eggs',
-		'$20.00',
-		'$17.00',
-	)
-	shopItemSeven.render()
-
-	let shopItemEight = new productsItem(
-		'.products',
-		'Fresh',
-		'"/src/img/products/bread.png"',
-		'"bread"',
-		'Zelco Suji Elaichi Rusk',
-		'$20.00',
-		'$15.00',
-	)
-	shopItemEight.render()
+	offerItems.forEach(item => {
+		const product = new productsItem(item)
+		product.render()
+	})
 })
