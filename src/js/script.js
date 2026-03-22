@@ -232,7 +232,7 @@ class GalleryItem {
 		
 		element.style.backgroundImage = `url(${this.src})`
 
-		element.innerHTML = `<a href="#" class="gallery__link">${this.linkTitle}</a>`
+		element.innerHTML = `<a href="#" class="gallery__link link title-blue">${this.linkTitle}</a>`
 
 		this.parent.append(element)
 	}

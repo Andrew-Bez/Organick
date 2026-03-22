@@ -12,3 +12,10 @@ background: #274C5B;
 	color: $blue;
 background: #EFD372;
 }
+
+.button-transparent {
+	@include button;
+	color: $blue;
+	border: 2px solid #274C5B;
+background: transparent;
+}
