@@ -1,0 +1,75 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.footer {
+	padding-top: 120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__wrapper {
+		display: flex;
+		gap: 50px;
+		justify-content: center;
+	}
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+		text-align: end;
+		padding-bottom: 35px;
+		&-list {
+			display: flex;
+			flex-direction: column;
+			gap: 40px;
+		}
+	}
+	&__social {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding-bottom: 35px;
+		&-logo {
+			display: flex;
+			justify-content: center;
+			gap: 5px;
+		}
+		&-info {
+			margin-top: 23px;
+			width: 540px;
+		}
+		&-list {
+			margin-top: 49px;
+			display: flex;
+			gap: 15px;
+		}
+	}
+	&__utility {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+		text-align: start;
+		padding-bottom: 35px;
+		&-list {
+			display: flex;
+			flex-direction: column;
+			gap: 25px;
+		}
+	}
+	&__divider {
+		width: 1px;
+		background-color: $gray;
+	}
+}
+
+.copyright {
+	margin-top: 17px;
+  margin-bottom: 17px;
+	&-divider {
+		margin-top: 100px;
+		width: 100%;
+		height: 1px;
+		background-color: $gray;
+	}
+}

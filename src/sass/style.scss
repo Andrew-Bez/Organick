@@ -6,9 +6,12 @@
 
 @use '/src/sass/libs/modern-normalize.min.css';
 
-@use '/src/sass/reuse/products.scss';
-
 @use '/src/sass/blocks/header.scss';
+@use '/src/sass/blocks/footer.scss';
+
+@use '/src/sass/blocks/products.scss';
+@use '/src/sass/blocks/form.scss';
+
 @use '/src/sass/blocks/promo.scss';
 @use '/src/sass/blocks/cards.scss';
 @use '/src/sass/blocks/about.scss';

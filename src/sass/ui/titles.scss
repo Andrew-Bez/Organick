@@ -16,6 +16,7 @@
 	font-size: 18px;
 	font-weight: 600;
 }
+
 /// TypoSizes
 .title-h1 {
 	@include font(70px, 800);
@@ -27,6 +28,10 @@
 
 .title-h3 {
 	@include font(40px, 800);
+}
+
+.title-h4 {
+	@include font(30px, 700)
 }
 
 .title-lg {
@@ -48,6 +53,12 @@
 .subtitle {
 	@include font(36px, 400);
 	font-family: Yellowtail;
+}
+
+.text-lg {
+	@include font(18px, 700);
+	color: $dark-gray;
+	font-family: 'Open Sans';
 }
 
 .text-md {
