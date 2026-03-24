@@ -9,12 +9,13 @@
 @use '/src/sass/blocks/header.scss';
 @use '/src/sass/blocks/footer.scss';
 
+@use '/src/sass/blocks/banner.scss';
 @use '/src/sass/blocks/products.scss';
 @use '/src/sass/blocks/form.scss';
+@use '/src/sass/blocks/about.scss';
 
 @use '/src/sass/blocks/promo.scss';
 @use '/src/sass/blocks/cards.scss';
-@use '/src/sass/blocks/about.scss';
 @use '/src/sass/blocks/categories.scss';
 @use '/src/sass/blocks/review.scss';
 @use '/src/sass/blocks/offer.scss';
