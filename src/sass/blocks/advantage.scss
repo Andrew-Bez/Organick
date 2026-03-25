@@ -1,0 +1,75 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.advantage {
+	background-color: $white;
+	padding: 190px 0;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 91px;
+	}
+	&__info {
+		display: flex;
+		gap: 50px;
+		&-wrap {
+			width: 624px;
+		}
+		&-img {
+			width: 678px;
+			border-radius: 25px;
+		}
+	}
+	&__title {
+		margin-top: 6px;
+	}
+	&__paragraph {
+		margin-top: 25px;
+	}
+	&__badge {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		margin-top: 30px;
+		background-color: #ececec;
+		width: 339px;
+		padding: 29px 91px 29px 27px;
+		border-radius: 49px;
+		svg {
+			margin-top: 2px;
+		}
+		&-subtitle {
+			margin-left: 60px;
+			margin-top: 12px;
+			width: 444px;
+		}
+	}
+	&__cards {
+		display: flex;
+		gap: 30px;
+		&-item {
+			background-color: white;
+			border-radius: 30px;
+			width: 280px;
+      height: 335px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 50px 35px 20px;
+		}
+		&-img {
+			background-color: $white;
+			border-radius: 18px;
+			width: 95px;
+			padding: 25px;
+		}
+		&-title {
+			margin-top: 15px;
+		}
+		&-p {
+			margin-top: 12px;
+			text-align: center;
+		}
+	}
+}

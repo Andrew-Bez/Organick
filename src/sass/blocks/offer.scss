@@ -1,28 +1,48 @@
 @use '/src/sass/base/variables.scss' as *;
 
 .offer {
-  padding: 200px 90px;
-  background-color: $blue;
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-  }
-  &__head {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-  }
-  &__info {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  &__btn {
-    display: flex;
-    flex-direction: row;
-    img {
-      margin-top: 2px;
+	padding: 200px 90px;
+	background-color: $blue;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+	}
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: end;
+		&-center {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 8px;
+		}
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+	&__btn {
+		display: flex;
+		flex-direction: row;
+		img {
+			margin-top: 2px;
+		}
+	}
+	&__categories {
+		display: flex;
+    text-align: center;
+		gap: 21px;
+    &-img {
+      width: 334px;
+      height: 314px;
+      border-radius: 25px;
     }
-  }
+    &-name {
+      margin-top: 15px;
+    }
+	}
 }
