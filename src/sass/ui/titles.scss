@@ -55,6 +55,11 @@
 	font-family: Yellowtail;
 }
 
+.subtitle-min {
+	@include font(22px, 400);
+	font-family: Yellowtail;
+}
+
 .text-lg {
 	@include font(18px, 700);
 	color: $dark-gray;
