@@ -19,10 +19,10 @@
 						><img src="/src/img/logo/Logo.svg" alt="" />Organick</a
 					>
 					<nav class="header__nav">
-						<a class="header__item link" href="#">Home</a>
+						<a class="header__item link" href="/">Home</a>
 						<a class="header__item link" href="/about.html">About</a>
 						<a class="header__item link" href="#">Pages</a>
-						<a class="header__item link" href="#">Shop</a>
+						<a class="header__item link" href="/shop.html">Shop</a>
 						<a class="header__item link" href="#">Projects</a>
 						<a class="header__item link" href="#">News</a>
 					</nav>
@@ -44,8 +44,10 @@
 			</div>
 		</header>
 
+		<main>
+			
 		<section class="promo">
-			<div class="container">
+			<div class="container-lg">
 				<div class="promo__wrapper">
 					<div class="promo__subtitle subtitle text-green">
 						100% Natural Food
@@ -61,13 +63,13 @@
 		</section>
 
 		<section class="cards">
-			<div class="container">
+			<div class="container-lg">
 				<div class="cards__wrapper"></div>
 			</div>
 		</section>
 
 		<section class="about about-orange">
-			<div class="container">
+			<div class="container-lg">	
 				<div class="about__wrapper">
 					<div class="about__text">
 						<div class="about__subtitle subtitle text-green">About Us</div>
@@ -106,7 +108,7 @@
 							</div>
 						</li>
 					</ul>
-					<button class="about__btn button">Shop Now</button>
+					<button class="about__btn button">Shop Now<img src="/src/img/btn_arrow.svg" alt="" /></button>
 				</div>
 			</div>
 		</section>
@@ -147,7 +149,7 @@
 							</div>
 						</li> -->
 					</ul>
-					<button class="categories__btn button">Load More</button>
+					<button class="categories__btn button">Load More<img src="/src/img/btn_arrow.svg" alt="" /></button>
 				</div>
 			</div>
 		</section>
@@ -230,7 +232,7 @@
 		</section>
 
 		<section class="eco">
-			<div class="container">
+			<div class="container-lg">
 				<div class="eco__wrapper">
 					<div class="eco__subtitle subtitle text-green">Eco Friendly</div>
 					<h2 class="eco__title title-h2 title-blue">
@@ -274,7 +276,7 @@
 		</section>
 
 		<section class="news">
-			<div class="container">
+			<div class="container-lg">
 				<div class="news__wrapper">
 					<div class="news__header">
 						<div class="news__titles">
@@ -330,12 +332,12 @@
 		</section>
 
 		<section class="form">
-			<div class="container">
+			<div class="container-lg">
 				<div class="form__wrapper">
 					<div class="form__title title-h2 title-white">
 						Subscribe to our Newsletter
 					</div>
-					<div class="form__block">
+					<form class="form__block">
 						<input
 							type="text"
 							placeholder="Your Email Address"
@@ -343,10 +345,12 @@
 							class="form__input"
 						/>
 						<button class="form__btn button">Subscribe</button>
-					</div>
+					</form>
 				</div>
 			</div>
 		</section>
+
+		</main>
 
 		<footer class="footer">
 			<div class="container">
@@ -421,6 +425,6 @@
 			<span class="copyright text-md">Copyright © <span class='text-lg'>Organick</span></span>
 		</footer>
 
-		<script type="module" src="/src/js/script.js"></script>
+		<script type="module" src="/src/js/script.js" defer></script>
 	</body>
 </html>

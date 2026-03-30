@@ -12,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 
 		render() {
+			if (!this.parent) return
 			const element = document.createElement('div')
 			element.classList.add('cards__item')
 
@@ -66,6 +67,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 
 		render() {
+			if (!this.parent) return
 			const element = document.createElement('li')
 			element.classList.add('products__item')
 			element.innerHTML = `<div class="products__tag text-sm">${this.tag}</div>
@@ -94,7 +96,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
-	const shopItems = [
+	const categoriesItems = [
 		{
 			parent: '.categories__list',
 			tag: 'Vegetable',
@@ -169,7 +171,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		},
 	]
 
-	shopItems.forEach(item => {
+	categoriesItems.forEach(item => {
 		const product = new productsItem(item)
 		product.render()
 	})
@@ -217,46 +219,231 @@ window.addEventListener('DOMContentLoaded', () => {
 		const product = new productsItem(item)
 		product.render()
 	})
-})
 
-class GalleryItem {
-	constructor({ parent, src, linkTitle }) {
-		this.parent = document.querySelector(parent)
-		this.src = src
-		this.linkTitle = linkTitle
+	const shopItems = [
+		{
+			parent: '.shop__products',
+			tag: 'Vegetable',
+			src: '/src/img/products/broccoli.png',
+			alt: 'broccoli',
+			title: 'Calabrese Broccoli',
+			priceOld: '$20.00',
+			priceNew: '$13.00',
+		},
+		{
+			parent: '.shop__products',
+			tag: 'Fresh',
+			src: '"/src/img/products/banana.png"',
+			alt: '"banana"',
+			title: 'Fresh Banana Fruites',
+			priceOld: '$20.00',
+			priceNew: '$14.00',
+		},
+		{
+			parent: '.shop__products',
+			tag: 'Millets',
+			src: '"/src/img/products/pistaches.png"',
+			alt: '"pistaches"',
+			title: 'White Nuts',
+			priceOld: '$20.00',
+			priceNew: '$15.00',
+		},
+		{
+			parent: '.shop__products',
+			tag: 'Vegetable',
+			src: '"/src/img/products/tomato.png"',
+			alt: '"tomato"',
+			title: 'Vegan Red Tomato',
+			priceOld: '$20.00',
+			priceNew: '$17.00',
+		},
+		{
+			parent: '.shop__products',
+			tag: 'Health',
+			src: '"/src/img/products/bean.png"',
+			alt: '"bean"',
+			title: 'Mung Bean',
+			priceOld: '$20.00',
+			priceNew: '$11.00',
+		},
+		{
+			parent: '.shop__products',
+			tag: 'Nuts',
+			src: '"/src/img/products/hazelnut.png"',
+			alt: '"hazelnut"',
+			title: 'Brown Hazelnut',
+			priceOld: '$20.00',
+			priceNew: '$12.00',
+		},
+		{
+			parent: '.shop__products',
+			tag: 'Fresh',
+			src: '"/src/img/products/eggs.png"',
+			alt: '"eggs"',
+			title: 'Eggs',
+			priceOld: '$20.00',
+			priceNew: '$17.00',
+		},
+		{
+			parent: '.shop__products',
+			tag: 'Fresh',
+			src: '"/src/img/products/bread.png"',
+			alt: '"bread"',
+			title: 'Zelco Suji Elaichi Rusk',
+			priceOld: '$20.00',
+			priceNew: '$15.00',
+		},
+		{
+			parent: '.shop__products',
+			tag: 'Vegetable',
+			src: '/src/img/products/mung-bean.png',
+			alt: 'mung bean',
+			title: 'Mung Bean',
+			priceOld: '$20.00',
+			priceNew: '$11.00',
+		},
+		{
+			parent: '.shop__products',
+			tag: 'Vegetable',
+			src: '/src/img/products/brown-hazelnut.png',
+			alt: 'Brown Hazelnut',
+			title: 'Brown Hazelnut',
+			priceOld: '$20.00',
+			priceNew: '$12.00',
+		},
+		{
+			parent: '.shop__products',
+			tag: 'Vegetable',
+			src: '/src/img/products/onion.png',
+			alt: 'Onion',
+			title: 'Onion',
+			priceOld: '$20.00',
+			priceNew: '$17.00',
+		},
+		{
+			parent: '.shop__products',
+			tag: 'Vegetable',
+			src: '/src/img/products/cabbage.png',
+			alt: 'Cabbage',
+			title: 'Cabbage',
+			priceOld: '$20.00',
+			priceNew: '$17.00',
+		},
+	]
+
+	shopItems.forEach(item => {
+		const product = new productsItem(item)
+		product.render()
+	})
+
+	class GalleryItem {
+		constructor({ parent, src, linkTitle }) {
+			this.parent = document.querySelector(parent)
+			this.src = src
+			this.linkTitle = linkTitle
+		}
+
+		render() {
+			if (!this.parent) return
+			const element = document.createElement('li')
+			element.classList.add('gallery__item')
+
+			element.style.backgroundImage = `url(${this.src})`
+
+			element.innerHTML = `<a href="#" class="gallery__link link title-blue">${this.linkTitle}</a>`
+
+			this.parent.append(element)
+		}
 	}
 
-	render() {
-		const element = document.createElement('li')
-		element.classList.add('gallery__item')
-		
-		element.style.backgroundImage = `url(${this.src})`
+	const galleryItems = [
+		{
+			parent: '.gallery__list',
+			src: '/src/img/organic__juice.png',
+			linkTitle: 'Organic Juice',
+		},
+		{
+			parent: '.gallery__list',
+			src: '/src/img/organick__food.jpg',
+			linkTitle: 'Organic Food',
+		},
+		{
+			parent: '.gallery__list',
+			src: '/src/img/nuts__cookies.png',
+			linkTitle: 'Nuts Cookis',
+		},
+	]
 
-		element.innerHTML = `<a href="#" class="gallery__link link title-blue">${this.linkTitle}</a>`
+	galleryItems.forEach(item => {
+		const galleryItem = new GalleryItem(item)
+		galleryItem.render()
+	})
 
-		this.parent.append(element)
+	class TeamCards {
+		constructor({ parent, src, alt, name, subtitle }) {
+			this.parent = document.querySelector(parent)
+			this.src = src
+			this.alt = alt
+			this.name = name
+			this.subtitle = subtitle
+		}
+
+		render() {
+			if (!this.parent) return
+
+			const element = document.createElement('li')
+			element.classList.add('team__item')
+
+			element.innerHTML = `<img
+								src="${this.src}"
+								alt="${this.alt}"
+								class="team__img"
+							/>
+							<div class="team__block">
+								<h5 class="team__name title-lg title-blue">${this.name}</h5>
+							<div class="team__subinfo">
+								<div class="team__profession subtitle-min text-green">${this.subtitle}</div>
+								<ul class="team__links">
+									<li>
+										<a><img src="/src/img/logo/facebook.svg" alt="facebook" /></a>
+									</li>
+									<li>
+										<a><img src="/src/img/logo/twitter.svg" alt="facebook" /></a>
+									</li>
+								</ul>
+							</div>
+							</div>`
+
+			this.parent.append(element)
+		}
 	}
-}
 
-const galleryItems = [
-	{
-		parent: '.gallery__list',
-		src: '/src/img/organic__juice.png',
-		linkTitle: 'Organic Juice',
-	},
-	{
-		parent: '.gallery__list',
-		src: '/src/img/organick__food.jpg',
-		linkTitle: 'Organic Food',
-	},
-	{
-		parent: '.gallery__list',
-		src: '/src/img/nuts__cookies.png',
-		linkTitle: 'Nuts Cookis',
-	},
-]
+	const teamItems = [
+		{
+			parent: '.team__list',
+			src: '/src/img/team/giovanni@2x.png',
+			alt: 'giovanni',
+			name: 'Giovani Bacardo',
+			subtitle: 'Farmer',
+		},
+		{
+			parent: '.team__list',
+			src: '/src/img/team/masha@2x.png',
+			alt: 'Marianne Loreno',
+			name: 'Marianne Loreno',
+			subtitle: 'Designer',
+		},
+		{
+			parent: '.team__list',
+			src: '/src/img/team/zariga@2x.png',
+			alt: 'Riga Pelore',
+			name: 'Riga Pelore',
+			subtitle: 'Farmer',
+		},
+	]
 
-galleryItems.forEach(item => {
-	const galleryItem = new GalleryItem(item)
-	galleryItem.render()
+	teamItems.forEach(item => {
+		const card = new TeamCards(item)
+		card.render()
+	})
 })

@@ -13,6 +13,9 @@
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 700;
+	&:active {
+		transform: translateY(1px) scale(0.98);
+	}
 }
 
 @mixin font($size, $weight) {

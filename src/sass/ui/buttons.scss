@@ -4,18 +4,31 @@
 .button {
 	@include button;
 	color: $white;
-background: #274C5B;
+	background: #274c5b;
+	transition: 0.2s all;
+	&:hover {
+		background: #3b5f73;
+	}
 }
 
 .button-yellow {
 	@include button;
 	color: $blue;
-background: #EFD372;
+	background: #efd372;
+	transition: 0.2s all;
+	&:hover {
+		background: #ffe68d;
+	}
 }
 
 .button-transparent {
 	@include button;
 	color: $blue;
-	border: 2px solid #274C5B;
-background: transparent;
+	border: 2px solid #274c5b;
+	background: transparent;
+	transition: 0.2s all;
+	&:hover {
+		color: $white;
+		background: #274c5b;
+	}
 }

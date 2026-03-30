@@ -18,5 +18,12 @@
 		background-color: white;
 		padding: 33px 83px;
 		border-radius: 20px;
+		transition: 0.3s all;
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.868);
+		}
+		&:active {
+			transform: translateY(1px) scale(0.98);
+		}
 	}
 }
