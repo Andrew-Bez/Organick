@@ -18,10 +18,14 @@
 		align-items: center;
 		gap: 20px;
 		margin-top: 60px;
-		width: 780px;
+		padding-bottom: 40px;
 		&-img {
 			border-radius: 100%;
 		}
+	}
+	&__text {
+		text-align: center;
+		width: 780px;
 	}
 	&__divider {
 		margin-top: 102px;
@@ -52,4 +56,24 @@
 			border-radius: inherit;
 		}
 	}
+}
+
+.swiper {
+	width: 60vw;
+	height: 100%;
+	&-slide {
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 0px;
+}
+
+.swiper-pagination-bullet {
+	background-color: gray;
 }

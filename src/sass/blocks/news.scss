@@ -18,17 +18,14 @@
 		margin-top: 45px;
 		display: flex;
 		justify-content: center;
-		gap: 46px;
+		flex-wrap: wrap;
+		column-gap: 46px;
+		row-gap: 100px;
 		&-item {
 			width: 677px;
 			padding: 42px 32px;
 			border-radius: 30px;
-			&:first-child {
-				background: url('/src/img/news__bckg.png');
-			}
-			&:last-child {
-				background: url('/src/img/news__bckg-two.png');
-			}
+			background: url('/src/img/news__bckg.png');
 		}
 		&-tag {
 			background-color: white;
