@@ -1,35 +1,35 @@
 @use '/src/sass/base/variables.scss' as *;
 
 .form {
-  margin-top: 180px;
-  &__wrapper {
-    background: url('/src/img/form__bckg.png') center center / cover no-repeat;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 30px;
-    height: 323px;
-    padding: 105px 71px;
-  }
-  &__title {
-    width: 370px;
-  }
-  &__block {
-    display: flex;
-    gap: 10px;
-  }
-  &__input {
-    border-radius: 16px;
-    border: none;
-    padding: 28px 23px;
-    font-style: italic;
-    width: 350px;
-    &:focus {
-      outline: none;
-      border: none;
-    }
-  }
-  &__btn {
-    width: 220px;
-  }
+	margin-top: 180px;
+	&__wrapper {
+		background: url('/src/img/form__bckg.png') center center / cover no-repeat;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-radius: 30px;
+		height: 323px;
+		padding: 105px 71px;
+	}
+	&__title {
+		width: 370px;
+	}
+	&__block {
+		display: flex;
+		gap: 10px;
+	}
+	&__input {
+		border-radius: 16px;
+		border: none;
+		padding: 28px 23px;
+		font-style: italic;
+		width: 350px;
+		&:focus {
+			outline: none;
+			border: none;
+		}
+	}
+	&__btn {
+		width: 220px;
+	}
 }

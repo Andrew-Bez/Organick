@@ -2,19 +2,17 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  height: 450px;
+	height: 450px;
 	&-about {
-		background: url('/src/img/about/AboutBanner.png') center center / cover
-		no-repeat;
+		background: url('/src/img/AboutBanner.png') center center / cover no-repeat;
 	}
 	&-shop {
-		background: url('/src/img/shopBanner.png') center center / cover
-		no-repeat;
+		background: url('/src/img/shopBanner.png') center center / cover no-repeat;
 	}
 	&-recent {
-		background: url('/src/img/recentBanner.png') center center / cover
-		no-repeat;
+		background: url('/src/img/recentBanner.png') center center / cover no-repeat;
+	}
+	&-team {
+		background: url('/src/img/teamBanner.png') center center / cover no-repeat;
 	}
 }
-
-

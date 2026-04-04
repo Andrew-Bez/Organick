@@ -3,17 +3,17 @@
 		url('/src/img/main_bckg_decor.png') center center / cover no-repeat,
 		url('/src/img/main_bckg.png') center center / cover no-repeat;
 	height: 898px;
-  padding-top: 247px;
-  &__wrapper {
-    width: 530px;
-  }
-  &__btn {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    margin-top: 23px;
-    img {
-      margin-top: 4px;
-    }
-  }
+	padding-top: 247px;
+	&__wrapper {
+		width: 530px;
+	}
+	&__btn {
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+		margin-top: 23px;
+		img {
+			margin-top: 4px;
+		}
+	}
 }

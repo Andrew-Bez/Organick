@@ -1,22 +1,22 @@
 @use '/src/sass/base/variables.scss' as *;
 
 .eco {
-  padding: 100px 0px;
-  background: url('/src/img/products/eco__bckg.png') left center / contain no-repeat;
-  &__wrapper {
-    margin-left: 600px;
-    width: 790px;
-    padding: 80px 90px;
-    background-color: white;
-    border-radius: 25px;
-  }
-  &__title {
-    margin-top: 8px;
-  }
-  &__info-list {
-    margin-top: 35px;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-  }
+	padding: 100px 0px;
+	background: url('/src/img/eco__bckg.png') left center / contain no-repeat;
+	&__wrapper {
+		margin-left: 600px;
+		width: 790px;
+		padding: 80px 90px;
+		background-color: white;
+		border-radius: 25px;
+	}
+	&__title {
+		margin-top: 8px;
+	}
+	&__info-list {
+		margin-top: 35px;
+		display: flex;
+		flex-direction: column;
+		gap: 35px;
+	}
 }

@@ -1,7 +1,10 @@
 @use '/src/sass/base/variables.scss' as *;
 
 .team {
-	padding: 177px 0px 202px;
+	padding: 177px 0px 0px;
+	&-small {
+		margin-bottom: 200px;
+	}
 	&__wrapper {
 		display: flex;
 		flex-direction: column;
