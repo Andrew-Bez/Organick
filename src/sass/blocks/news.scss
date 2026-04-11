@@ -8,7 +8,7 @@
 		justify-content: space-between;
 	}
 	&__title {
-		width: 700px;
+		width: 800px;
 	}
 	&__btn {
 		display: flex;
@@ -49,6 +49,7 @@
 			margin-top: 15px;
 		}
 		&-btn {
+			width: max-content;
 			margin-top: 15px;
 			display: flex;
 			flex-direction: row;

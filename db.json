@@ -1,0 +1,112 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"tag": "Vegetable",
+			"src": "broccoli.png",
+			"alt": "broccoli",
+			"title": "Calabrese Broccoli",
+			"priceOld": "$20.00",
+			"priceNew": "$13.00"
+		},
+		{
+			"id": 2,
+			"tag": "Fresh",
+			"src": "banana.png",
+			"alt": "banana",
+			"title": "Fresh Banana Fruites",
+			"priceOld": "$20.00",
+			"priceNew": "$14.00"
+		},
+		{
+			"id": 3,
+			"tag": "Millets",
+			"src": "pistaches.png",
+			"alt": "pistaches",
+			"title": "White Nuts",
+			"priceOld": "$20.00",
+			"priceNew": "$15.00"
+		},
+		{
+			"id": 4,
+			"tag": "Vegetable",
+			"src": "tomato.png",
+			"alt": "tomato",
+			"title": "Vegan Red Tomato",
+			"priceOld": "$20.00",
+			"priceNew": "$17.00"
+		},
+		{
+			"id": 5,
+			"tag": "Health",
+			"src": "bean.png",
+			"alt": "bean",
+			"title": "Mung Bean",
+			"priceOld": "$20.00",
+			"priceNew": "$11.00"
+		},
+		{
+			"id": 6,
+			"tag": "Nuts",
+			"src": "hazelnut.png",
+			"alt": "hazelnut",
+			"title": "Brown Hazelnut",
+			"priceOld": "$20.00",
+			"priceNew": "$12.00"
+		},
+		{
+			"id": 7,
+			"tag": "Fresh",
+			"src": "eggs.png",
+			"alt": "eggs",
+			"title": "Eggs",
+			"priceOld": "$20.00",
+			"priceNew": "$17.00"
+		},
+		{
+			"id": 8,
+			"tag": "Fresh",
+			"src": "bread.png",
+			"alt": "bread",
+			"title": "Zelco Suji Elaichi Rusk",
+			"priceOld": "$20.00",
+			"priceNew": "$15.00"
+		},
+		{
+			"id": 9,
+			"tag": "Vegetable",
+			"src": "mung-bean.png",
+			"alt": "mung bean",
+			"title": "Mung Bean",
+			"priceOld": "$20.00",
+			"priceNew": "$11.00"
+		},
+		{
+			"id": 10,
+			"tag": "Vegetable",
+			"src": "brown-hazelnut.png",
+			"alt": "Brown Hazelnut",
+			"title": "Brown Hazelnut",
+			"priceOld": "$20.00",
+			"priceNew": "$12.00"
+		},
+		{
+			"id": 11,
+			"tag": "Vegetable",
+			"src": "onion.png",
+			"alt": "Onion",
+			"title": "Onion",
+			"priceOld": "$20.00",
+			"priceNew": "$17.00"
+		},
+		{
+			"id": 12,
+			"tag": "Vegetable",
+			"src": "cabbage.png",
+			"alt": "Cabbage",
+			"title": "Cabbage",
+			"priceOld": "$20.00",
+			"priceNew": "$17.00"
+		}
+	]
+}
